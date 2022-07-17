@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="https://www.techshenanigans.com/">Captcha System</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Catogeries</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Authors
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Blogs</a>
+          <a class="dropdown-item" href="#">Development</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Business</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>  
+<div class="container">
+	<div class="row">
+		<div style="width: 40%; margin: 25px auto;">
+		<h3 style="text-align: center;">Login Page</h3>
+		<form method="POST" action="">
+			<div class="form-group">
+				<label>UserName:</label><input type="text" name="UserName" class="form-control" autofocus placeholder="username">
+			</div>
+			<div class="form-group">
+				<label>Password:</label><input type="Password" name="Password" class="form-control" autofocus placeholder="Password">
+			</div>
+
+      <label>Enter Captcha:</label>
+      <img src= imageArray  onclick="generateRandomPicture()" width="200" height="100">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+       </div>
+        <div class="form-group col-md-8">
+
+          <input type="text" class="form-control" id="textinput">
+        </div>
+      </div>
+
+	<div class="form-group">
+				<button onclick="validcap()" class="btn btn-lg btn-success btn-block">Submit</button>
+			</div>
+		</form>
+    <h6>Captcha not visible <img src="refresh.jpg" width="30px" onclick="validcap()"></h6>
+    <p>New Here?<a href="">Sign Up</a> </p>
+		<p>Forgotten Password?<a href="">Recover here</a> </p>
+	</div>
+</div>
+</div>
+  <script>
+    
+    var imageArray = [
+    "https://lh3.googleusercontent.com/O9OkhSZgJ9P0XTN_w63i9UlT3_pzr703tGPGLpaCmAOte4W4T5vOVqnSUYugMyjLgi39wq0=s170",
+    "https://lh3.googleusercontent.com/k5hld8V0gDuzbXYlROE0TDvCb8lJ-2a1CBT41x6EG50_DW_wtf6ma5uVerWdI-oHDqmTVw=s160",
+    "https://lh3.googleusercontent.com/BDW21nm1NoPUV_X33Q8mtHktuqwblbu46_oSWrHmCyW2OBlbR0d0QwYrER8VRXtrhTEBiw=s170",
+    "https://lh3.googleusercontent.com/Zr71njboeq8BRXsBkQeegDaBUDGwvpbaDDs7gSST2MEkn00lTo_EvVVdU01w41Ed8NphC5g=s170",
+    "https://lh3.googleusercontent.com/eSQry20u69Xr7urTZjXNT31dUVV6xGTsZqRCo1r-bqtQaT_FVJ2m3WNYnxPvidS4lpvG=s170",
+    "https://lh3.googleusercontent.com/zbyXqv38dV6A1WZrnXgRr0lLZ0KX4PHK1Yph3t9bndR1zfGrC1LqYpMO8bXkg9R3x1s6VQ=s170",
+    "https://lh3.googleusercontent.com/yniDGYeKA7HhOYcmIuc1Yv8TzgFDnIGL4jahYcMaRQ3kvyHpYoUtSKtTkpffZrJRsk5H=s170",
+    "https://lh3.googleusercontent.com/6tnVYghNVLC7_rZcf-Gr2cyDGffo3ETZ2wPU_Isj0jkrhIMT7RZyryB1XIT8JpXP_er6DA4=s170",
+    "https://lh3.googleusercontent.com/vLacveGYUzwMvjdclxYPvyhc21dG6O4WPujz75DMorawxg8Y8oUY2t4S1n6ATeKpvlU4PZ4=s170",
+    "https://lh3.googleusercontent.com/qicMuzLUCIIM35DX0GWEJpqiYBzzjNUdOV3xrB9CCe5K0s5xEua1rgFX7FWJ07zdsd-D=s170"
+  
+];
+    
+    
+imagesArray[0] = new id
+imagesArray[0].src = new "dog.jpg";
+imagesArray[1] = new Image();
+imagesArray[1].src = new "fox.jpg";
+imagesArray[2] = new Image();
+imagesArray[2].src = new "mouse.jpg";
+imagesArray[3] = new Image();
+imagesArray[3].src = new "alligator.jpg";
+imagesArray[4] = new Image();
+imagesArray[4].src = new "fish.jpg";
+imagesArray[5] = new Image();
+imagesArray[5].src = new "parrot.jpg";
+imagesArray[6] = new Image();
+imagesArray[6].src = new "cat.jpg";
+
+
+
+var image = document.querySelector("img");
+var button = document.querySelector("button");
+
+window.onload = () => generateRandomPicture(imageArray);
+
+button.addEventListener("click", () => generateRandomPicture(imageArray));
+
+function generateRandomPicture(array){
+  let randomNum = Math.floor(Math.random() * array.length); 
+  image.setAttribute("src", array[randomNum]);
+}
+
+</script>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</html>
